@@ -6,5 +6,6 @@ public class RegexUserRegistration {
         UserOperator uop=new UserOperator();
         uop.firstName("Sangeeta");
         uop.lastName("Math");
+        uop.emailAddress("sang123@gmail.com");
     }
 }
