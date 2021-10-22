@@ -8,5 +8,6 @@ public class RegexUserRegistration {
         uop.lastName("Math");
         uop.emailAddress("sang123@gmail.com");
         uop.phoneNo("91 9876453625");
+        uop.passward("Sang@123");
     }
 }

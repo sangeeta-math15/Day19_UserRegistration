@@ -40,14 +40,25 @@ public class UserOperator {
     }
 
     public void phoneNo(String phoneNo) {
-        String regex="^[0-9]{2}\\s{1}[0-9]{10}$";
+        String regex = "^[0-9]{2}\\s{1}[0-9]{10}$";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(phoneNo);
-        boolean valid= matcher.matches();
+        boolean valid = matcher.matches();
         if (valid == true) {
             System.out.println("Your Phone Number " + phoneNo + " is Valid");
         } else {
             System.out.println("Your Phone Number " + phoneNo + " is Invalid");
+        }
+    }
+    public void passward(String passward) {
+        String regex = "^(?=.*[A-Z]){1}(?=.*[a-z])(?=.*[0-9])(?=.*[@#$%!]).{8,}$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(passward);
+        boolean valid = matcher.matches();
+        if (valid == true) {
+            System.out.println("Your Passward " + passward + " is Valid");
+        } else {
+            System.out.println("Your Passward " + passward + " is Invalid");
         }
     }
 }
