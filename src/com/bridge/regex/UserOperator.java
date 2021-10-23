@@ -61,4 +61,27 @@ public class UserOperator {
             System.out.println("Your Passward " + passRule1 + " is Invalid");
         }
     }
+    public void passWordRule2(String passWordRule2) {
+        //String regex = "^[0-9a-zA-Z]{8,}$";
+        String regex = "^(?=.*[A-Z]){1}(?=.*[a-z]).{8,}$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(passWordRule2);
+        boolean valid = matcher.matches();
+        if (valid == true) {
+            System.out.println("Your Passward " + passWordRule2 + " is Valid");
+        } else {
+            System.out.println("Your Passward " + passWordRule2 + " is Invalid");
+        }
+    }
+    public void passwordRule3(String passwordRule3) {
+        String regex = "^(?=.*[A-Z]){1}(?=.*[a-z])(?=.*[0-9]).{8,}$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(passwordRule3);
+        boolean valid = matcher.matches();
+        if (valid == true) {
+            System.out.println("Your Passward " + passwordRule3 + " is Valid");
+        } else {
+            System.out.println("Your Passward " + passwordRule3 + " is Invalid");
+        }
+    }
 }

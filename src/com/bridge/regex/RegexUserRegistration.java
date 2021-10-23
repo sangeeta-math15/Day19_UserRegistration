@@ -1,5 +1,4 @@
 package com.bridge.regex;
-
 public class RegexUserRegistration {
     public static void main(String[] args) {
         System.out.println("Welcome to user registration problem using regex");
@@ -8,6 +7,8 @@ public class RegexUserRegistration {
         uop.lastName("Math");
         uop.emailAddress("sang123@gmail.com");
         uop.phoneNo("91 9876453625");
-        uop.passRule1("Sang@123");
+        uop.passRule1("sang1234");
+        uop.passWordRule2("Sang1234");
+        uop.passwordRule3("Sang1ggu");
     }
 }
